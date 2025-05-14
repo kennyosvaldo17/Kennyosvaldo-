@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vogue Vault</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Vogue Vault</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bvlgari">Bvlgari</a></li>
+                <li><a href="#cartier">Cartier</a></li>
+                <li><a href="#van-cleef">Van Cleef</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <img src="hero-banner.jpg" alt="Banner Principal">
+            <h2>Bem-vindo à Vogue Vault</h2>
+            <p>Descubra acessórios exclusivos das marcas mais renomadas do mundo.</p>
+            <a href="#contato" class="btn-contato">Entre em Contato</a>
+        </div>
+    </section>
+
+    <section id="bvlgari">
+        <h2>Bvlgari</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="bvlgari-product1.jpg" alt="Produto Bvlgari">
+                <p>Descrição do produto Bvlgari.</p>
+                <a href="#contato" class="btn-contato">Saiba Mais</a>
+            </div>
+            <!-- Adicionar mais produtos Bvlgari -->
+        </div>
+    </section>
+
+    <section id="cartier">
+        <h2>Cartier</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="cartier-product1.jpg" alt="Produto Cartier">
+                <p>Descrição do produto Cartier.</p>
+                <a href="#contato" class="btn-contato">Saiba Mais</a>
+            </div>
+            <!-- Adicionar mais produtos Cartier -->
+        </div>
+    </section>
+
+    <section id="van-cleef">
+        <h2>Van Cleef & Arpels</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="van-cleef-product1.jpg" alt="Produto Van Cleef">
+                <p>Descrição do produto Van Cleef.</p>
+                <a href="#contato" class="btn-contato">Saiba Mais</a>
+            </div>
+            <!-- Adicionar mais produtos Van Cleef -->
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Na Vogue Vault, oferecemos acessórios de luxo das marcas mais icônicas. Nossa missão é proporcionar uma experiência exclusiva de compra online para os amantes de joias e relógios de alta qualidade.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Telefone: 923865390</p>
+        <p>Instagram: <a href="https://www.instagram.com/voguevault.ao">voguevault.ao</a></p>
+        <form action="submit_contact.php" method="post">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vogue Vault. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.hero {
+    background-color: #ddd;
+    padding: 100px 20px;
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    margin: 20px;
+    width: 200px;
+}
+
+.product-item img {
+    width: 100%;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
